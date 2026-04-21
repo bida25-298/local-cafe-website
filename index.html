@@ -1,60 +1,102 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local Cafe - Welcome</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Cozy cafe fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lora&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Lora', serif;
+      background-color: #fdfaf6;
+    }
+    .navbar-brand {
+      font-family: 'Playfair Display', serif;
+      font-size: 1.8rem;
+      color: #6b4423 !important;
+    }
+    .hero {
+      background-color: #f5e6d3;
+      padding: 4rem 0;
+    }
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      color: #4a3220;
+    }
+    .btn-coffee {
+      background-color: #8b5a2b;
+      color: white;
+      border: none;
+    }
+    .btn-coffee:hover {
+      background-color: #6b4423;
+      color: white;
+    }
+    footer {
+      background-color: #4a3220;
+      color: #fdfaf6;
+    }
+  </style>
+</head>
+<body>
 
-<html lang="en"> 
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Local Cafe</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="menu.html">Menu</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
-<head> 
+  <!-- Hero Section -->
+  <section class="hero text-center">
+    <div class="container">
+      <h1 class="display-4 mb-3">Welcome to Local Cafe</h1>
+      <p class="lead mb-4">Your cozy corner for fresh coffee, warm pastries, and good vibes.</p>
+      <a href="menu.html" class="btn btn-coffee btn-lg">See Our Menu</a>
+    </div>
+  </section>
 
-    <meta charset="UTF-8"> 
+  <!-- Welcome Content -->
+  <section class="py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-6 mb-4 mb-lg-0">
+          <h2>Pull Up a Chair</h2>
+          <p>We’re a small, family-run cafe in Gaborone serving handcrafted coffee and homemade treats. Whether you need a quiet spot to study or a table to catch up with friends, we’ve saved you a seat.</p>
+          <p><strong>Opening Hours:</strong> Mon - Sat, 7am to 6pm</p>
+          <a href="feedback.html" class="btn btn-outline-dark">Leave Feedback</a>
+        </div>
+        <div class="col-lg-6">
+          <img src="https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=600" class="img-fluid rounded shadow" alt="Cozy cafe interior">
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Footer -->
+  <footer class="py-4 text-center">
+    <div class="container">
+      <p class="mb-1">&copy; 2026 Local Cafe, Gaborone</p>
+      <small>Built by bida25-298 | Made with Bootstrap & good coffee</small>
+    </div>
+  </footer>
 
-    <title>Local Cafe</title>
-    <link rel="stylesheet" href="styles.css"> 
-
-</head> 
-
-<body> 
-
-    <header> 
-
-        <h1>Welcome to Local Cafe!</h1>
-
-         <nav> 
-
-            <a href="index.html">Home</a> | 
-
-            <a href="about.html">About</a> | 
-
-            <a href="menu.html">Menu</a> |
-
-            <a href="reservation">Reservation</a> |
-
-            <a href="feedback.html">Feedback</a> 
-
-        </nav> 
-
-    </header> 
-
- 
-
-    <main> 
-
-
-        <p>Check out our delicious food and tasty coffee,We are excited to serve you,YEYYY!:</p> 
-
-        <img src="https://placeacupofcoffe.com/200/300" alt="Delicious cafe food and perfect coffe spogitt"> 
-
-         
-    </main> 
-
-  <footer> 
-
-        <p>&copy; 2026 Pearl Sethibang</p> 
-
-    </footer> 
-
- 
-
-</body> 
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
 </html> 
