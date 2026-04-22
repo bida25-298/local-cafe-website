@@ -5,171 +5,121 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Local Cafe - Menu</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&family=Lora&display=swap" rel="stylesheet">
-  <style>
-    body { 
-      font-family: 'Lora', serif; 
-      background-color: #4a3220; 
-      color: #fdfaf6; 
-    }
-    .navbar-brand { font-family: 'Playfair Display', serif; font-size: 1.8rem; color: #6b4423 !important; }
-    h1, h2, h3 { font-family: 'Playfair Display', serif; color: #fdfaf6; }
-    .lead { color: #e8dcc8; }
-    .menu-card { 
-      background-color: #5c3e28; 
-      border: 1px solid #8b5a2b;
-      border-radius: 0.375rem;
-      height: 100%;
-    }
-    .menu-price { 
-      color: #d4a574; 
-      font-weight: 600; 
-      font-size: 1.1rem;
-    }
-    .menu-desc { color: #d4c4b0; font-size: 0.95rem; }
-    footer { background-color: #3a2518; color: #fdfaf6; }
-    hr { border-color: #8b5a2b; opacity: 0.5; }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
-<body>
+<body class="menu-page">
 
-  <nav class="navbar navbar-expand-lg bg-light shadow-sm">
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
-      <a class="navbar-brand" href="index.html">Local Cafe</a>
+      <a class="navbar-brand" href="index.html">The Cozy Kupa</a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
           <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
           <li class="nav-item"><a class="nav-link active" href="menu.html">Menu</a></li>
-          <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
-          <li class="nav-item"><a class="nav-link" href="reservation.html">Reservation</a></li>
-          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
-  <section class="text-center py-5">
-    <div class="container">
-      <h1 class="display-5 mb-2">Our Menu</h1>
-      <p class="lead">Fresh brews and tasty deals!</p>
-    </div>
-  </section>
+  <main class="container my-5">
+    <h1 class="text-center mb-5">Our Menu</h1>
 
-  <section class="py-5">
-    <div class="container">
-      
-      <!-- Coffee Section -->
-      <h2 class="text-center mb-4">Coffee</h2>
-      <div class="row g-4 mb-5">
-        <div class="col-md-6 col-lg-4">
-          <div class="menu-card p-4">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <h3 class="h5 mb-0">Cappuccino</h3>
-              <span class="menu-price">P32</span>
-            </div>
-            <p class="menu-desc mb-0">Rich espresso with steamed milk foam</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="menu-card p-4">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <h3 class="h5 mb-0">Latte</h3>
-              <span class="menu-price">P35</span>
-            </div>
-            <p class="menu-desc mb-0">Smooth espresso with lots of milk</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="menu-card p-4">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <h3 class="h5 mb-0">Americano</h3>
-              <span class="menu-price">P28</span>
-            </div>
-            <p class="menu-desc mb-0">Strong black coffee, hot water</p>
+    <!-- Coffee Section -->
+    <h2 class="mb-4">Coffee</h2>
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-between">Espresso <span>P20</span></h5>
+            <p class="card-text">Strong and rich single shot</p>
           </div>
         </div>
       </div>
-
-      <hr class="my-5">
-
-      <!-- Food Section -->
-      <h2 class="text-center mb-4">Food</h2>
-      <div class="row g-4 mb-5">
-        <div class="col-md-6 col-lg-4">
-          <div class="menu-card p-4">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <h3 class="h5 mb-0">Sandwich</h3>
-              <span class="menu-price">P45</span>
-            </div>
-            <p class="menu-desc mb-0">Toasted chicken & mayo</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="menu-card p-4">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <h3 class="h5 mb-0">Muffin</h3>
-              <span class="menu-price">P20</span>
-            </div>
-            <p class="menu-desc mb-0">Blueberry or chocolate chip</p>
-          </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="menu-card p-4">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <h3 class="h5 mb-0">Cake Slice</h3>
-              <span class="menu-price">P30</span>
-            </div>
-            <p class="menu-desc mb-0">Fresh daily selection</p>
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-between">Latte <span>P28</span></h5>
+            <p class="card-text">Smooth espresso with steamed milk</p>
           </div>
         </div>
       </div>
-
-      <hr class="my-5">
-
-      <!-- Drinks Section -->
-      <h2 class="text-center mb-4">Drinks</h2>
-      <div class="row g-4 mb-5">
-        <div class="col-md-6 col-lg-4">
-          <div class="menu-card p-4">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <h3 class="h5 mb-0">Coke</h3>
-              <span class="menu-price">P26</span>
-            </div>
-            <p class="menu-desc mb-0">Ice cold can</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="menu-card p-4">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <h3 class="h5 mb-0">Fanta</h3>
-              <span class="menu-price">P25</span>
-            </div>
-            <p class="menu-desc mb-0">Orange and refreshing</p>
-          </div>
-        </div>
-        <div class="col-md-6 col-lg-4">
-          <div class="menu-card p-4">
-            <div class="d-flex justify-content-between align-items-start mb-2">
-              <h3 class="h5 mb-0">Juice</h3>
-              <span class="menu-price">P30</span>
-            </div>
-            <p class="menu-desc mb-0">Fresh seasonal juice</p>
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-between">Cappuccino <span>P28</span></h5>
+            <p class="card-text">Espresso with foamed milk and cocoa</p>
           </div>
         </div>
       </div>
-
     </div>
-  </section>
 
-  <footer class="py-4 text-center">
-    <div class="container">
-      <p class="mb-0">&copy; 2026; The Cozy Kupa local cafe</p>
+    <!-- Food Section -->
+    <h2 class="mb-4">Food</h2>
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-between">Muffin <span>P18</span></h5>
+            <p class="card-text">Freshly baked blueberry muffin</p>
+          </div>
+        </div>
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-between">Sandwich <span>P35</span></h5>
+            <p class="card-text">Chicken mayo on brown bread</p>
+          </div>
+        </div>
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-between">Cake Slice <span>P30</span></h5>
+            <p class="card-text">Fresh daily selection</p>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <!-- Drinks Section -->
+    <h2 class="mb-4">Drinks</h2>
+    <div class="row g-4 mb-5">
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-between">Coke <span>P26</span></h5>
+            <p class="card-text">Ice cold can</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-between">Fanta <span>P25</span></h5>
+            <p class="card-text">Orange and refreshing</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card menu-card h-100">
+          <div class="card-body">
+            <h5 class="card-title d-flex justify-content-between">Juice <span>P30</span></h5>
+            <p class="card-text">Fresh seasonal juice</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <p class="mb-0">&copy; 2026; The Cozy Kupa local cafe</p>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-                                           </html>
+  </html>
