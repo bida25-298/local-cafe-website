@@ -1,1 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Cafe Coffee Shop - Gallery</title>
+    <style>
+        body { font-family: Arial, sans-serif; background-color: #f5f5dc; margin: 0; padding: 0; }
+        nav { background-color: #4b2e2e; padding: 15px; text-align: center; }
+        nav a { color: white; text-decoration: none; margin: 0 15px; font-weight: bold; }
+        h1 { text-align: center; color: #4b2e2e; padding: 20px 0 10px 0; }
+        .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 15px; max-width: 1000px; margin: 0 auto; padding: 0 20px 40px 20px; }
+        .gallery img { width: 100%; height: 250px; object-fit: cover; border-radius: 10px; }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="menu.html">Menu</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="reservation.html">Reservation</a>
+        <a href="feedback.html">Feedback</a>
+    </nav>
 
+    <h1>Gallery</h1>
+    <div class="gallery">
+        <img src="images/americano.jpg" alt="Americano" loading="lazy">
+        <img src="images/latte.jpg" alt="Latte" loading="lazy">
+        <img src="images/cappuccino.jpg" alt="Cappuccino" loading="lazy">
+        <img src="images/muffin.jpg" alt="Muffin" loading="lazy">
+        <img src="images/sandwich.jpg" alt="Sandwich" loading="lazy">
+        <img src="images/cakeslice.jpg" alt="Cake Slice" loading="lazy">
+        <img src="images/coke.jpg" alt="Coke" loading="lazy">
+        <img src="images/fanta.jpg" alt="Fanta" loading="lazy">
+        <img src="images/juice.jpg" alt="Juice" loading="lazy">
+    </div>
+</body>
+  </html>
